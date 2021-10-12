@@ -14,7 +14,7 @@ CREATE TABLE cs122a_hw.Users (
 
 DROP TABLE IF EXISTS cs122a_hw.Students;
 CREATE TABLE cs122a_hw.Students (
-    u_id        integer REFERENCES cs122a_hw.Users,
+    u_id        integer REFERENCES cs122a_hw.Users ON DELETE CASCADE,
     occupation  text,
     PRIMARY KEY(u_id)
 );
@@ -25,27 +25,27 @@ DROP TABLE IF EXISTS cs122a_hw.Instructors_majors;
 DROP TABLE IF EXISTS cs122a_hw.Instructors_schools;
 DROP TABLE IF EXISTS cs122a_hw.Instructors_year;
 CREATE TABLE cs122a_hw.Instructors (
-    u_id        integer REFERENCES cs122a_hw.Users,
+    u_id        integer REFERENCES cs122a_hw.Users ON DELETE CASCADE,
     title       text,
     PRIMARY KEY(u_id)
 );
 CREATE TABLE cs122a_hw.Instructors_degrees(
-    u_id        integer REFERENCES cs122a_hw.Instructors,
+    u_id        integer REFERENCES cs122a_hw.Instructors ON DELETE CASCADE,
     degree      text NOT NULL,
     PRIMARY KEY(u_id, degree)
 );
 CREATE TABLE cs122a_hw.Instructors_majors(
-    u_id        integer REFERENCES cs122a_hw.Instructors,
+    u_id        integer REFERENCES cs122a_hw.Instructors ON DELETE CASCADE,
     major       text NOT NULL,
     PRIMARY KEY(u_id, major)
 );
 CREATE TABLE cs122a_hw.Instructors_schools(
-    u_id        integer REFERENCES cs122a_hw.Instructors,
+    u_id        integer REFERENCES cs122a_hw.Instructors ON DELETE CASCADE,
     school      text NOT NULL,
     PRIMARY KEY(u_id, school)
 );
 CREATE TABLE cs122a_hw.Instructors_year(
-    u_id        integer REFERENCES cs122a_hw.Instructors,
+    u_id        integer REFERENCES cs122a_hw.Instructors ON DELETE CASCADE,
     graduation_year     decimal(4,0) NOT NULL,
     PRIMARY KEY(u_id, graduation_year)
 );
@@ -116,7 +116,7 @@ CREATE TABLE cs122a_hw.Posts(
         ON DELETE CASCADE
 );
 CREATE TABLE cs122a_hw.Posts_topics(
-    post_id     integer REFERENCES cs122a_hw.Posts,
+    post_id     integer REFERENCES cs122a_hw.Posts ON DELETE CASCADE,
     post_topic  text NOT NULL,
     PRIMARY KEY(post_id, post_topic)
 );
@@ -128,45 +128,45 @@ CREATE TABLE cs122a_hw.Posts_topics(
 --SQL DDLs for Relationships 
 DROP TABLE IF EXISTS cs122a_hw.Enrolled_in;
 CREATE TABLE cs122a_hw.Enrolled_in(
-    u_id        integer REFERENCES cs122a_hw.Students,
-    course_id   integer REFERENCES cs122a_hw.Courses,
+    u_id        integer REFERENCES cs122a_hw.Students ON DELETE CASCADE,
+    course_id   integer REFERENCES cs122a_hw.Courses ON DELETE CASCADE,
     enroll_date date NOT NULL,
     PRIMARY KEY(u_id, course_id)
 );
 
 DROP TABLE IF EXISTS cs122a_hw.Teaches;
 CREATE TABLE cs122a_hw.Teaches(
-    u_id        integer REFERENCES cs122a_hw.Instructors,
-    course_id   integer REFERENCES cs122a_hw.Courses,
+    u_id        integer REFERENCES cs122a_hw.Instructors ON DELETE CASCADE,
+    course_id   integer REFERENCES cs122a_hw.Courses ON DELETE CASCADE,
     PRIMARY KEY(u_id, course_id)
 );
 
 DROP TABLE IF EXISTS cs122a_hw.Attend;
 CREATE TABLE cs122a_hw.Attend(
-    u_id        integer REFERENCES cs122a_hw.Students,
-    meeting_id  integer REFERENCES cs122a_hw.Meetings,
+    u_id        integer REFERENCES cs122a_hw.Students ON DELETE CASCADE,
+    meeting_id  integer REFERENCES cs122a_hw.Meetings ON DELETE CASCADE,
     PRIMARY KEY(u_id, meeting_id)
 );
 
 DROP TABLE IF EXISTS cs122a_hw.RecursOn;
 CREATE TABLE cs122a_hw.RecursOn(
-    recurr_id   integer REFERENCES cs122a_hw.Recurrences,
-    meeting_id  integer REFERENCES cs122a_hw.Meetings,
+    recurr_id   integer REFERENCES cs122a_hw.Recurrences ON DELETE CASCADE,
+    meeting_id  integer REFERENCES cs122a_hw.Meetings ON DELETE CASCADE,
     PRIMARY KEY(meeting_id)
 );
 
 DROP TABLE IF EXISTS cs122a_hw.ThumbsUp;
 CREATE TABLE cs122a_hw.ThumbsUp(
-    u_id        integer REFERENCES cs122a_hw.Users,
-    post_id     integer REFERENCES cs122a_hw.Posts,
+    u_id        integer REFERENCES cs122a_hw.Users ON DELETE CASCADE,
+    post_id     integer REFERENCES cs122a_hw.Posts ON DELETE CASCADE,
     PRIMARY KEY(u_id, post_id)
 );
 
 DROP TABLE IF EXISTS cs122a_hw.Watched;
 DROP TABLE IF EXISTS cs122a_hw.Watched_segments;
 CREATE TABLE cs122a_hw.Watched(
-    u_id            integer REFERENCES cs122a_hw.Students,
-    recording_id    integer REFERENCES cs122a_hw.Recordings,
+    u_id            integer REFERENCES cs122a_hw.Students ON DELETE CASCADE,
+    recording_id    integer REFERENCES cs122a_hw.Recordings ON DELETE CASCADE,
     PRIMARY KEY(u_id, recording_id)
 );
 CREATE TABLE cs122a_hw.Watched_segments(
