@@ -1,0 +1,349 @@
+instructor_id,education_id,degree,major,school,graduation_year
+1,0,Bachelor of Science,Mechanical Engineering,Penn State,2012
+1,1,Bachelor of Arts,Chemical Engineering,USD,2014
+1,2,Master,International Studies,Penn State,1990
+8,3,Bachelor of Science,Business Management,MIT,1998
+8,4,Bachelor of Arts,English,NYU,1982
+8,5,Master,Music,Virginia Tech,1982
+9,6,Bachelor of Science,Financial Engineering,UCI,1994
+9,7,Bachelor of Arts,Physics,Harvard,1997
+9,8,Master,International Studies,NYU,2010
+9,9,MBA,Music,UCI,2002
+9,10,Doctorate,Electrical Engineering,Brown University,1988
+11,11,Bachelor of Science,Nursing,NYU,2019
+11,12,Bachelor of Arts,History,Yale University,1987
+11,13,Master,Chemistry,Virginia Tech,2002
+11,14,MBA,Physics,Harvard,2000
+12,15,Bachelor of Science,English,Stanford,2012
+19,16,Bachelor of Science,Business Management,Brown University,2004
+19,17,Bachelor of Arts,Music,UMass,1989
+21,18,Bachelor of Science,Literature,UCSD,1996
+21,19,Bachelor of Arts,Chemical Engineering,UCSF,2003
+21,20,Master,Aerospace Engineering,UCLA,1988
+21,21,MBA,International Studies,Harvard,1984
+21,22,Doctorate,Physics,NYU,1986
+22,23,Bachelor of Science,Chemistry,UCSD,2007
+32,24,Bachelor of Science,Pre-Medicine,UCLA,2014
+32,25,Bachelor of Arts,Business Management,UCLA,1988
+32,26,Master,Mechanical Engineering,USD,1998
+37,27,Bachelor of Science,Computer Science,Brown University,2008
+39,28,Bachelor of Science,Literature,UCR,2017
+39,29,Bachelor of Arts,Computer Science,Yale University,1987
+39,30,Master,Financial Engineering,UCLA,2016
+39,31,MBA,Literature,UCR,1997
+39,32,Doctorate,Biometry,University of Maryland,2000
+40,33,Bachelor of Science,Mechanical Engineering,Washington State,1987
+40,34,Bachelor of Arts,Computer Science,USD,2003
+45,35,Bachelor of Science,Music,Stanford,1992
+45,36,Bachelor of Arts,Business Management,MIT,2013
+45,37,Master,Mathematics,Berkeley,1984
+46,38,Bachelor of Science,English,Washington State,1994
+46,39,Bachelor of Arts,Mathematics,UCI,1990
+46,40,Master,Computer Science,Virginia Tech,2008
+51,41,Bachelor of Science,Mechanical Engineering,UCI,1983
+51,42,Bachelor of Arts,Literature,Yale University,1989
+51,43,Master,Literature,UCR,2015
+54,44,Bachelor of Science,Literature,NYU,2002
+55,45,Bachelor of Science,Chemistry,Brown University,2011
+55,46,Bachelor of Arts,Performing Arts,Washington State,2005
+55,47,Master,Mathematics,UCSF,1995
+55,48,MBA,Mechanical Engineering,Penn State,1982
+55,49,Doctorate,International Studies,UCR,1999
+59,50,Bachelor of Science,Physics,Penn State,2005
+71,51,Bachelor of Science,Financial Engineering,UCR,1992
+71,52,Bachelor of Arts,Performing Arts,Virginia Tech,1987
+73,53,Bachelor of Science,Computer Science,UCSD,2007
+73,54,Bachelor of Arts,Mathematics,MIT,2000
+73,55,Master,Business Management,Brown University,2019
+80,56,Bachelor of Science,Nursing,UCSD,2013
+80,57,Bachelor of Arts,Mechanical Engineering,Stanford,1995
+80,58,Master,Performing Arts,UCLA,1995
+80,59,MBA,Chemistry,UCR,1988
+80,60,Doctorate,Nursing,Yale University,2006
+82,61,Bachelor of Science,Mechanical Engineering,Washington State,2015
+82,62,Bachelor of Arts,Biometry,UMass,2013
+82,63,Master,Biometry,USD,2016
+82,64,MBA,Chemistry,Harvard,1982
+94,65,Bachelor of Science,Business Management,University of Maryland,2014
+94,66,Bachelor of Arts,Mechanical Engineering,MIT,2014
+94,67,Master,English,UCI,2015
+94,68,MBA,Chemistry,UCI,2009
+94,69,Doctorate,Nursing,Penn State,2016
+100,70,Bachelor of Science,History,Washington State,2006
+100,71,Bachelor of Arts,Mechanical Engineering,UCLA,1992
+107,72,Bachelor of Science,Business Management,Virginia Tech,2011
+107,73,Bachelor of Arts,English,UCSD,2012
+107,74,Master,International Studies,Berkeley,1984
+107,75,MBA,Chemistry,UCR,2002
+109,76,Bachelor of Science,Public Relations,UCLA,2011
+109,77,Bachelor of Arts,Chemistry,UMass,1989
+109,78,Master,Chemistry,Penn State,1990
+110,79,Bachelor of Science,Public Relations,MIT,1994
+110,80,Bachelor of Arts,English,Virginia Tech,2010
+110,81,Master,Chemical Engineering,USD,2011
+110,82,MBA,Chemical Engineering,UCI,1984
+110,83,Doctorate,English,Brown University,1998
+117,84,Bachelor of Science,International Studies,Berkeley,2010
+117,85,Bachelor of Arts,Aerospace Engineering,Washington State,1983
+117,86,Master,Biometry,UMass,1998
+120,87,Bachelor of Science,Pre-Medicine,Berkeley,1996
+120,88,Bachelor of Arts,Chemical Engineering,UCI,1991
+131,89,Bachelor of Science,Financial Engineering,UCSF,2019
+131,90,Bachelor of Arts,Music,UCSD,2016
+131,91,Master,Physics,Penn State,1992
+131,92,MBA,Mechanical Engineering,UCR,1990
+131,93,Doctorate,Biology,UMass,2014
+132,94,Bachelor of Science,History,University of Maryland,2008
+142,95,Bachelor of Science,Computer Science,Washington State,2002
+142,96,Bachelor of Arts,Business Management,USD,2005
+142,97,Master,History,Brown University,1987
+144,98,Bachelor of Science,Business Management,Virginia Tech,1993
+144,99,Bachelor of Arts,Aerospace Engineering,Washington State,1993
+144,100,Master,Biology,Yale University,2003
+144,101,MBA,Electrical Engineering,UCR,2004
+144,102,Doctorate,Business Management,UCI,2012
+146,103,Bachelor of Science,Computer Science,USD,2001
+146,104,Bachelor of Arts,Public Relations,Penn State,2016
+146,105,Master,Chemistry,UCR,2009
+149,106,Bachelor of Science,Computer Science,UCSD,1999
+149,107,Bachelor of Arts,English,Berkeley,1998
+149,108,Master,Mechanical Engineering,MIT,2019
+149,109,MBA,Mechanical Engineering,Yale University,1988
+149,110,Doctorate,Literature,University of Maryland,2000
+153,111,Bachelor of Science,Music,Washington State,2000
+154,112,Bachelor of Science,Performing Arts,USD,2016
+154,113,Bachelor of Arts,Public Relations,Washington State,2016
+154,114,Master,Mechanical Engineering,Stanford,2000
+154,115,MBA,Business Management,University of Maryland,2018
+157,116,Bachelor of Science,International Studies,NYU,2001
+157,117,Bachelor of Arts,Chemical Engineering,Brown University,2008
+157,118,Master,Nursing,Brown University,2013
+159,119,Bachelor of Science,International Studies,Brown University,1985
+159,120,Bachelor of Arts,Chemistry,USD,1983
+171,121,Bachelor of Science,Aerospace Engineering,UCR,2010
+171,122,Bachelor of Arts,International Studies,MIT,2002
+171,123,Master,International Studies,USD,1993
+171,124,MBA,Business Management,University of Maryland,2006
+171,125,Doctorate,Aerospace Engineering,Brown University,2006
+176,126,Bachelor of Science,Performing Arts,UCSF,1996
+176,127,Bachelor of Arts,Chemistry,Penn State,1987
+176,128,Master,Electrical Engineering,Penn State,2004
+176,129,MBA,Aerospace Engineering,Yale University,1985
+176,130,Doctorate,Performing Arts,MIT,2017
+178,131,Bachelor of Science,Nursing,UMass,1999
+178,132,Bachelor of Arts,English,UCLA,1985
+178,133,Master,Pre-Medicine,University of Maryland,1982
+180,134,Bachelor of Science,Mathematics,Harvard,2011
+180,135,Bachelor of Arts,Nursing,UMass,1988
+180,136,Master,Chemistry,UCI,2002
+182,137,Bachelor of Science,English,USD,2005
+182,138,Bachelor of Arts,Music,USD,2015
+182,139,Master,Chemical Engineering,USD,1994
+182,140,MBA,Literature,Penn State,2001
+187,141,Bachelor of Science,Business Management,UCLA,2008
+187,142,Bachelor of Arts,Biometry,Yale University,2010
+187,143,Master,Public Relations,UCI,1987
+187,144,MBA,Biology,UCSD,1991
+187,145,Doctorate,Aerospace Engineering,USD,2010
+188,146,Bachelor of Science,English,UCSF,1997
+188,147,Bachelor of Arts,Biometry,Harvard,1990
+188,148,Master,Literature,University of Maryland,2002
+189,149,Bachelor of Science,Chemistry,NYU,1994
+189,150,Bachelor of Arts,History,Yale University,2014
+195,151,Bachelor of Science,Computer Science,NYU,2014
+195,152,Bachelor of Arts,Aerospace Engineering,UCLA,1989
+195,153,Master,Mechanical Engineering,Stanford,1989
+195,154,MBA,Physics,University of Maryland,1996
+195,155,Doctorate,Mathematics,Penn State,1996
+199,156,Bachelor of Science,Pre-Medicine,UCR,1982
+199,157,Bachelor of Arts,Mathematics,MIT,2002
+199,158,Master,Chemical Engineering,Berkeley,1990
+199,159,MBA,Mechanical Engineering,UCR,1993
+201,160,Bachelor of Science,Physics,USD,1997
+201,161,Bachelor of Arts,International Studies,Harvard,2006
+201,162,Master,Chemical Engineering,UCR,2013
+207,163,Bachelor of Science,Music,Stanford,1990
+207,164,Bachelor of Arts,Chemistry,Virginia Tech,1994
+210,165,Bachelor of Science,Biology,Stanford,2004
+210,166,Bachelor of Arts,Pre-Medicine,Penn State,1983
+210,167,Master,Chemical Engineering,NYU,1985
+217,168,Bachelor of Science,Business Management,Washington State,1991
+223,169,Bachelor of Science,Computer Science,MIT,1990
+228,170,Bachelor of Science,Public Relations,Yale University,1991
+228,171,Bachelor of Arts,Chemistry,UCLA,1998
+228,172,Master,Financial Engineering,Virginia Tech,1983
+228,173,MBA,Performing Arts,UCLA,2013
+233,174,Bachelor of Science,Biometry,Virginia Tech,1982
+233,175,Bachelor of Arts,History,MIT,2000
+234,176,Bachelor of Science,Physics,NYU,1998
+234,177,Bachelor of Arts,English,Yale University,2007
+234,178,Master,Public Relations,Virginia Tech,2004
+234,179,MBA,Biometry,UCLA,1983
+235,180,Bachelor of Science,Physics,Penn State,1995
+235,181,Bachelor of Arts,Electrical Engineering,MIT,2003
+235,182,Master,Mechanical Engineering,Stanford,1995
+235,183,MBA,Public Relations,UMass,1997
+235,184,Doctorate,Physics,NYU,2004
+238,185,Bachelor of Science,History,Penn State,2002
+238,186,Bachelor of Arts,Biometry,Virginia Tech,2009
+242,187,Bachelor of Science,Literature,USD,1986
+242,188,Bachelor of Arts,Mathematics,Washington State,1999
+242,189,Master,Pre-Medicine,MIT,1992
+261,190,Bachelor of Science,Music,Yale University,1997
+261,191,Bachelor of Arts,Business Management,MIT,1988
+261,192,Master,Nursing,UCSF,2010
+267,193,Bachelor of Science,Nursing,Virginia Tech,2006
+267,194,Bachelor of Arts,Aerospace Engineering,Virginia Tech,1984
+268,195,Bachelor of Science,International Studies,Stanford,2002
+268,196,Bachelor of Arts,Computer Science,Virginia Tech,2012
+268,197,Master,Electrical Engineering,UCR,1984
+268,198,MBA,Music,University of Maryland,2005
+271,199,Bachelor of Science,Computer Science,UMass,2007
+271,200,Bachelor of Arts,International Studies,Stanford,2008
+276,201,Bachelor of Science,Performing Arts,Virginia Tech,1993
+276,202,Bachelor of Arts,Chemical Engineering,UCI,1987
+276,203,Master,Mathematics,UCSF,1998
+276,204,MBA,Nursing,Stanford,2002
+282,205,Bachelor of Science,Music,USD,2011
+282,206,Bachelor of Arts,Chemistry,Harvard,2011
+290,207,Bachelor of Science,Electrical Engineering,University of Maryland,1989
+290,208,Bachelor of Arts,International Studies,UMass,1983
+290,209,Master,Pre-Medicine,UCR,1983
+294,210,Bachelor of Science,Pre-Medicine,University of Maryland,1986
+294,211,Bachelor of Arts,Aerospace Engineering,UCLA,2010
+294,212,Master,Chemical Engineering,Stanford,2001
+294,213,MBA,Physics,Yale University,2008
+294,214,Doctorate,Pre-Medicine,Berkeley,2011
+300,215,Bachelor of Science,Biometry,Brown University,1987
+300,216,Bachelor of Arts,English,NYU,2007
+300,217,Master,Literature,Berkeley,2015
+300,218,MBA,Public Relations,UCI,2003
+310,219,Bachelor of Science,Biology,Penn State,2003
+325,220,Bachelor of Science,Electrical Engineering,USD,2016
+325,221,Bachelor of Arts,Mechanical Engineering,UCI,1990
+329,222,Bachelor of Science,Biology,Brown University,2007
+329,223,Bachelor of Arts,Physics,UCI,1998
+329,224,Master,Literature,MIT,2005
+333,225,Bachelor of Science,Mechanical Engineering,Berkeley,2008
+333,226,Bachelor of Arts,Mechanical Engineering,Washington State,1988
+333,227,Master,Business Management,Yale University,1992
+333,228,MBA,Pre-Medicine,UMass,2012
+333,229,Doctorate,Aerospace Engineering,UCSF,2019
+334,230,Bachelor of Science,International Studies,University of Maryland,2012
+334,231,Bachelor of Arts,Performing Arts,MIT,1985
+335,232,Bachelor of Science,Physics,UMass,2000
+335,233,Bachelor of Arts,Mechanical Engineering,UCLA,2000
+335,234,Master,Mathematics,Washington State,1984
+335,235,MBA,Aerospace Engineering,Stanford,2006
+335,236,Doctorate,Nursing,University of Maryland,1990
+340,237,Bachelor of Science,Mathematics,NYU,1990
+340,238,Bachelor of Arts,Pre-Medicine,UCR,1995
+340,239,Master,Pre-Medicine,Harvard,1983
+346,240,Bachelor of Science,International Studies,Virginia Tech,2017
+346,241,Bachelor of Arts,History,Harvard,2006
+346,242,Master,Chemical Engineering,Virginia Tech,2012
+346,243,MBA,Electrical Engineering,Penn State,2008
+346,244,Doctorate,Aerospace Engineering,UCSD,1991
+347,245,Bachelor of Science,Performing Arts,MIT,1988
+347,246,Bachelor of Arts,Performing Arts,USD,2014
+347,247,Master,Public Relations,Stanford,1992
+347,248,MBA,Mechanical Engineering,UCI,1984
+352,249,Bachelor of Science,Pre-Medicine,NYU,2017
+357,250,Bachelor of Science,International Studies,Virginia Tech,1992
+357,251,Bachelor of Arts,Business Management,UCLA,2006
+357,252,Master,Music,Virginia Tech,2003
+357,253,MBA,Biology,MIT,2011
+359,254,Bachelor of Science,Mechanical Engineering,Brown University,1998
+359,255,Bachelor of Arts,Pre-Medicine,Harvard,2016
+359,256,Master,Chemical Engineering,UCSF,2001
+359,257,MBA,Chemistry,UCR,2011
+359,258,Doctorate,Music,UCI,2012
+366,259,Bachelor of Science,Public Relations,Brown University,2017
+366,260,Bachelor of Arts,Chemical Engineering,UMass,1988
+366,261,Master,Computer Science,Harvard,1996
+366,262,MBA,Biometry,Penn State,1999
+366,263,Doctorate,Biology,Berkeley,2013
+368,264,Bachelor of Science,Chemical Engineering,Virginia Tech,1991
+368,265,Bachelor of Arts,Biology,Penn State,1994
+368,266,Master,Biometry,University of Maryland,2000
+368,267,MBA,Mechanical Engineering,UCR,1989
+368,268,Doctorate,Mechanical Engineering,University of Maryland,2014
+374,269,Bachelor of Science,International Studies,University of Maryland,1997
+374,270,Bachelor of Arts,Pre-Medicine,UMass,2013
+374,271,Master,Biology,UCSD,2006
+376,272,Bachelor of Science,Biology,Virginia Tech,2014
+376,273,Bachelor of Arts,History,Brown University,1996
+376,274,Master,Financial Engineering,MIT,1982
+376,275,MBA,Music,Brown University,2002
+397,276,Bachelor of Science,Chemical Engineering,UMass,2011
+397,277,Bachelor of Arts,Performing Arts,UCR,2015
+408,278,Bachelor of Science,Financial Engineering,UCR,2008
+408,279,Bachelor of Arts,Literature,Virginia Tech,1987
+408,280,Master,Physics,MIT,2003
+408,281,MBA,Biology,Yale University,1997
+410,282,Bachelor of Science,Computer Science,NYU,2007
+410,283,Bachelor of Arts,Business Management,Harvard,2009
+410,284,Master,Biology,Stanford,2012
+410,285,MBA,Biometry,UCR,1996
+410,286,Doctorate,Business Management,Penn State,2005
+420,287,Bachelor of Science,English,UMass,2015
+420,288,Bachelor of Arts,Nursing,UMass,1993
+420,289,Master,Electrical Engineering,NYU,2019
+422,290,Bachelor of Science,English,Harvard,2013
+422,291,Bachelor of Arts,Chemistry,UMass,2017
+422,292,Master,Nursing,Berkeley,1984
+426,293,Bachelor of Science,History,UMass,2013
+426,294,Bachelor of Arts,Nursing,UCSF,2005
+426,295,Master,Mathematics,University of Maryland,2010
+426,296,MBA,Mechanical Engineering,Yale University,2002
+426,297,Doctorate,Business Management,UCI,1991
+432,298,Bachelor of Science,Physics,Washington State,2016
+432,299,Bachelor of Arts,Nursing,Berkeley,1990
+432,300,Master,Electrical Engineering,Brown University,2001
+433,301,Bachelor of Science,Biometry,Berkeley,1995
+433,302,Bachelor of Arts,Aerospace Engineering,University of Maryland,2001
+433,303,Master,Music,Berkeley,1997
+433,304,MBA,Chemistry,Berkeley,2019
+439,305,Bachelor of Science,Literature,UCI,1984
+439,306,Bachelor of Arts,International Studies,UMass,2019
+439,307,Master,Physics,Brown University,1986
+439,308,MBA,Electrical Engineering,Brown University,2009
+445,309,Bachelor of Science,Public Relations,University of Maryland,2000
+445,310,Bachelor of Arts,Chemical Engineering,USD,2016
+445,311,Master,Mathematics,UCLA,2003
+446,312,Bachelor of Science,Computer Science,Stanford,2003
+446,313,Bachelor of Arts,International Studies,University of Maryland,1988
+446,314,Master,Chemistry,NYU,2008
+449,315,Bachelor of Science,Biology,University of Maryland,1988
+449,316,Bachelor of Arts,Mathematics,USD,1993
+449,317,Master,Biology,Virginia Tech,1994
+449,318,MBA,Chemistry,Yale University,2004
+454,319,Bachelor of Science,Financial Engineering,Penn State,2002
+454,320,Bachelor of Arts,English,UCI,1982
+454,321,Master,History,UCSD,1992
+454,322,MBA,Literature,USD,2014
+454,323,Doctorate,Mathematics,University of Maryland,2010
+464,324,Bachelor of Science,History,UCLA,1997
+464,325,Bachelor of Arts,Electrical Engineering,UCR,1998
+464,326,Master,Chemistry,UCLA,2006
+464,327,MBA,Aerospace Engineering,Stanford,2019
+464,328,Doctorate,Biology,Stanford,2002
+474,329,Bachelor of Science,Literature,Virginia Tech,2009
+474,330,Bachelor of Arts,Biometry,UCLA,1992
+475,331,Bachelor of Science,International Studies,Harvard,2001
+479,332,Bachelor of Science,Aerospace Engineering,UCSF,1997
+479,333,Bachelor of Arts,Mathematics,UCR,2019
+479,334,Master,Pre-Medicine,Harvard,2015
+479,335,MBA,History,Berkeley,2011
+479,336,Doctorate,Nursing,UCLA,2008
+486,337,Bachelor of Science,Mechanical Engineering,Yale University,1999
+492,338,Bachelor of Science,Biology,Yale University,1990
+492,339,Bachelor of Arts,Chemistry,MIT,2000
+492,340,Master,Computer Science,UCR,2004
+493,341,Bachelor of Science,Electrical Engineering,Stanford,1990
+493,342,Bachelor of Arts,Computer Science,Brown University,1994
+497,343,Bachelor of Science,Financial Engineering,University of Maryland,2006
+497,344,Bachelor of Arts,Mechanical Engineering,Virginia Tech,2014
+497,345,Master,History,Harvard,1994
+497,346,MBA,Aerospace Engineering,USD,1998
+497,347,Doctorate,Electrical Engineering,UCSF,2014
