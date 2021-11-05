@@ -58,11 +58,11 @@ LIMIT 5;
 -- 7. Find the post ids and the number of replies for each post that has one or more replies. List only the top five 
 -- posts that have the highest number of replies.
 
-SELECT P.replied_to_post_id AS post_id, COUNT(*) AS num_of_replies
-FROM swoosh.Post P
-WHERE P.replied_to_post_id IS NOT NULL
-GROUP BY P.replied_to_post_id
-HAVING COUNT(*) >= 1
+SELECT P1.post_id, COUNT(*) AS num_of_replies
+FROM swoosh.Post P1, swoosh.Post P2
+WHERE P1.post_id = P2.replied_to_post_id
+GROUP BY P1.post_id
+-- HAVING COUNT(*) >= 1
 ORDER BY num_of_replies DESC
 LIMIT 5;
 
