@@ -1,0 +1,131 @@
+Q2
+    1 false
+    2 true
+    3 true?
+    4 true  --false
+    5 16 | 3 --3
+    6 1 --2
+    7 foreign key --trigger
+    8 check
+    9 unique
+    10 foreign key
+    11 0
+    12 10
+    13 no --yes
+
+Q3
+    1 ALL --c
+    2 ALL --a
+    3 ALL --b
+    4 b --bc
+    5 a --b
+
+Q4
+    1 
+        select p.pno, p.pname, p.price
+        from part p
+        where p.color = 'blue' or p.color = 'teal'
+        order by p.price desc;
+    
+    2 SELECT * FROM SV ORDER BY totparts DESC;
+
+    buynow, 1, 1, 150
+    worsebuy, 1, 2, 100
+    Acme, 1, 1, 30
+
+q5
+    1 
+        return error when trying to insert a row in supplier that has the same name and state
+    
+    2 success
+    3 success
+    4 success
+    5 success
+    6 error : dude really?
+    7
+        1􀍨 Acme􀍨 sales􀍏acme􀍥com􀍨 NY􀍨 30􀍨 2020􀎌11􀎌01
+        1                        CO
+        2􀍨 BuyNow􀍨 deals􀍏buynow􀍥com􀍨 CA􀍨 150􀍨 2020􀎌11􀎌21
+        7   BuyNow                      MA
+            PriceCo
+        3􀍨 WorstBuy􀍨 mgr􀍏worstbuy􀍥com􀍨 IL􀍨 100􀍨 2020􀎌10􀎌31
+        4􀍨 WorstBuy􀍨 mgr􀍏worstbuy􀍥com􀍨 CA􀍨 0􀍨 2020􀎌10􀎌31
+
+    8 ab
+
+
+
+q2
+    1 relational algebra
+    2 no
+    3 yes
+    4 no
+    5 15
+    6 inf?
+    7 check
+    8 trigger
+    9 unique
+    10 view
+    11 unique
+    12 11
+    13 22
+    14 no
+    15 no
+
+Q3
+    1 ac
+    2 a
+    3 abc
+    4 b
+    5 c
+
+q4
+    1 
+        eid, pct, did, dname, budget, mgrid, mgrname
+        1, 80, 101, accounting, 50000, 1, dustin
+        1, 20, 102, sales, 50000, 3, em
+        3, 100, 102, sales, ...
+        5, 50, 102, ..
+        7, 33, 101, ...
+        7, 33, 102,
+        7, 33, 103, legal, 100000, 7, win
+        9, 100, 104, null, null, null, null
+
+    2
+        some ppl works over 100% time, and some ppl work in nonexistant dept
+    
+    3
+        eid, ename, mgrname, did, dname, budge    
+        1, dustin, dustin, 101, accounting, 50000
+        3, emily, null 
+        5, john, null
+        7, win, win, 103, legal, 100000
+        9, arthur jr, null
+    
+    4 manager name are different
+
+    5 
+    SELECT w.eid, w.did, w.budget
+    FROM WorksInDept w, managesdept m
+    where w.eid not in (select m.eid from managesdept m where m.did is not null)
+
+q5
+    1   
+        CREATE VIEW EmpStats (agegroup, numemps, lowsal, avgsal, highsal) 
+        AS    
+        SELECT e.age as agegroup, count(*) as numemps, min(e.salary) as low
+        from Emp E
+        group by e.age
+    
+    2
+        (102, sales, 50000, 3, emily)
+    
+    3
+     
+     6 foreign key
+
+    foreign key(did) references Dept(did)
+
+    7 views, check, stored procedures?
+
+    
