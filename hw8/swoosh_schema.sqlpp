@@ -1,0 +1,135 @@
+DROP DATAVERSE swoosh_schema IF EXISTS;
+CREATE DATAVERSE swoosh_schema;
+USE swoosh_schema;
+
+// Create the data types for our datasets.
+CREATE TYPE UsersType AS {
+user_id: string,
+email: string,
+name: {first_name: string, last_name: string},
+isstudent: boolean,
+isinstructor: boolean,
+occupation: string ?,
+education : [{ degree: string ?, major: string ?, school: string ?, graduation_year: int ?}] ?
+};
+
+CREATE TYPE WatchedType AS {
+recording_id: string,
+user_id: string,
+watched_segment: [{ watched_from: time, watched_to: time}]
+};
+
+CREATE TYPE MeetingType AS {
+meeting_id: string,
+meeting_name: string,
+passcode: string ?,
+start_at: datetime,
+duration: int,
+mute_participants: boolean,
+course_id: string,
+instructor_id: string,
+recurr_id: string ?
+};
+
+CREATE TYPE CourseType AS {
+course_id: string,
+course_name: string,
+description: string ?
+};
+
+CREATE TYPE PostType AS {
+post_id: string,
+post_type: string,
+body: string ?,
+created_at: datetime,
+user_id: string,
+meeting_id: string,
+replied_to_post_id: string ?,
+topics: [ string ] ?
+};
+
+CREATE TYPE ThumbsUpType AS {
+user_id: string,
+post_id:string
+};
+
+
+CREATE TYPE TeachesType AS {
+user_id: string,
+course_id: string
+};
+
+CREATE TYPE RecurrenceType AS {
+recurr_id: string,
+repeat_on: string,
+end_date: date
+};
+
+CREATE TYPE RecordingType AS {
+recording_id: string,
+start_time: time ?,
+end_time: time ?,
+meeting_id: string
+};
+
+CREATE TYPE EnrolledInType AS {
+user_id: string,
+course_id: string,
+enroll_date: date
+};
+
+CREATE TYPE AttendedType AS {
+user_id: string,
+meeting_id: string
+};
+
+// Create our datasets.
+CREATE DATASET Users(UsersType) PRIMARY KEY user_id;
+CREATE DATASET Watched(WatchedType) PRIMARY KEY recording_id, user_id;
+CREATE DATASET Meeting(MeetingType) PRIMARY KEY meeting_id;
+CREATE DATASET Course(CourseType) PRIMARY KEY course_id;
+CREATE DATASET Post(PostType) PRIMARY KEY post_id;
+CREATE DATASET ThumbsUp(ThumbsUpType) PRIMARY KEY user_id, post_id;
+CREATE DATASET Teaches(TeachesType) PRIMARY KEY user_id, course_id;
+CREATE DATASET Recurrence(RecurrenceType) PRIMARY KEY recurr_id;
+CREATE DATASET Recording(RecordingType) PRIMARY KEY recording_id;
+CREATE DATASET EnrolledIn(EnrolledInType) PRIMARY KEY user_id, course_id;
+CREATE DATASET Attended(AttendedType) PRIMARY KEY user_id, meeting_id ;
+
+// Load our datasets. (Note: Replace **ALL** instances of "home/asuka/projects/cs122a/hw8" !)
+LOAD DATASET Users USING localfs
+    (("path"=":///home/asuka/projects/cs122a/hw8/data/user.json"),("format"="json"));
+LOAD DATASET Watched USING localfs
+    (("path"=":///home/asuka/projects/cs122a/hw8/data/watched.json"),("format"="json"));
+LOAD DATASET Meeting USING localfs
+    (("path"=":///home/asuka/projects/cs122a/hw8/data/meeting.json"),("format"="json"));
+LOAD DATASET Course USING localfs
+    (("path"=":///home/asuka/projects/cs122a/hw8/data/course.json"),("format"="json"));
+LOAD DATASET Post USING localfs
+    (("path"=":///home/asuka/projects/cs122a/hw8/data/post.json"),("format"="json"));
+LOAD DATASET ThumbsUp USING localfs
+    (("path"=":///home/asuka/projects/cs122a/hw8/data/thumbsup.json"),("format"="json"));
+LOAD DATASET Teaches USING localfs
+    (("path"=":///home/asuka/projects/cs122a/hw8/data/teaches.json"),("format"="json"));
+LOAD DATASET Recurrence USING localfs
+    (("path"=":///home/asuka/projects/cs122a/hw8/data/recurrence.json"),("format"="json"));
+LOAD DATASET Recording USING localfs
+    (("path"=":///home/asuka/projects/cs122a/hw8/data/recording.json"),("format"="json"));
+LOAD DATASET EnrolledIn USING localfs
+    (("path"=":///home/asuka/projects/cs122a/hw8/data/enrolledin.json"),("format"="json"));
+LOAD DATASET Attended USING localfs
+    (("path"=":///home/asuka/projects/cs122a/hw8/data/attended.json"),("format"="json"));
+// Verify that our datasets have been loaded correctly.
+SELECT VALUE {
+    "userCount": (SELECT VALUE COUNT(*) FROM Users)[0],
+    "watchedCount": (SELECT VALUE COUNT(*) FROM Watched)[0],
+    "meetingCount": (SELECT VALUE COUNT(*) FROM Meeting)[0],
+    "courseCount": (SELECT VALUE COUNT(*) FROM Course)[0],
+    "postCount": (SELECT VALUE COUNT(*) FROM Post)[0],
+    "thumbsupCount": (SELECT VALUE COUNT(*) FROM ThumbsUp)[0],
+    "teachesCount": (SELECT VALUE COUNT(*) FROM Teaches)[0],
+    "recurrenceCount": (SELECT VALUE COUNT(*) FROM Recurrence)[0],
+    "recordingCount": (SELECT VALUE COUNT(*) FROM Recording)[0],
+    "enrollmentCount": (SELECT VALUE COUNT(*) FROM EnrolledIn)[0],
+    "attendanceCount": (SELECT VALUE COUNT(*) FROM Attended)[0]
+};

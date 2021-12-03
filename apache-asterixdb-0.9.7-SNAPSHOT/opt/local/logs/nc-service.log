@@ -1,0 +1,27 @@
+--------------------------
+Thu Nov 25 11:06:28 PM PST 2021
+--------------------------
+Error: JAVA_HOME is not defined correctly.
+  We cannot execute /usr/bin/java/bin/java
+--------------------------
+Thu Nov 25 11:07:04 PM PST 2021
+--------------------------
+23:07:05.244 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Waiting for connection from CC on *:9090
+23:07:06.307 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Using JAVA_OPTS from conf file (jvm.args)
+23:07:06.309 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Setting JAVA_OPTS to -XX:MaxGCPauseMillis=25000 -Xmx4724m
+23:07:06.309 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Launching NCDriver process
+23:07:07.292 [main] WARN  org.apache.hyracks.control.nc.NCLogConfigurationFactory - logs are being redirected to: /home/asuka/projects/cs122a/apache-asterixdb-0.9.7-SNAPSHOT/opt/local/logs/nc-asterix_nc1.log
+23:07:25.470 [main] INFO  org.apache.hyracks.control.nc.service.NCService - NCDriver exited with return value 99
+23:07:25.470 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Terminating NCService based on return value from NCDriver
+23:07:25.471 [main] INFO  org.apache.hyracks.control.nc.service.NCService - JVM Exiting.. Bye!
+--------------------------
+Thu Nov 25 11:07:55 PM PST 2021
+--------------------------
+23:07:56.766 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Waiting for connection from CC on *:9090
+23:07:57.822 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Using JAVA_OPTS from conf file (jvm.args)
+23:07:57.825 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Setting JAVA_OPTS to -XX:MaxGCPauseMillis=25000 -Xmx4724m
+23:07:57.826 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Launching NCDriver process
+23:07:58.816 [main] WARN  org.apache.hyracks.control.nc.NCLogConfigurationFactory - logs are being redirected to: /home/asuka/projects/cs122a/apache-asterixdb-0.9.7-SNAPSHOT/opt/local/logs/nc-asterix_nc1.log
+23:01:26.838 [main] INFO  org.apache.hyracks.control.nc.service.NCService - NCDriver exited with return value 99
+23:01:26.861 [main] INFO  org.apache.hyracks.control.nc.service.NCService - Terminating NCService based on return value from NCDriver
+23:01:26.861 [main] INFO  org.apache.hyracks.control.nc.service.NCService - JVM Exiting.. Bye!
